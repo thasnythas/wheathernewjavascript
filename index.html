@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+   
+    <link rel="stylesheet" href="./style.css">
+
+    <style>
+        .popy {
+            border: 2px solid #ccc;
+            margin: 20px 0;
+            opacity: 0.68;
+        }
+        image {
+            mix-blend-mode: multiply;
+            width: 100%;
+    height: auto;
+        }
+
+
+
+    </style>
+</head>
+<body>
+<!--header-->
+
+
+
+
+    
+
+ <navbar>
+   
+<header>
+   
+<ul>
+    <img src="https://img.icons8.com/?size=100&id=18592&format=png"alt="gs "  class="simple">    
+ <li><a href="#">home</a></li> 
+ <li><a href="#">whether</a></li>  
+ <li><a href="#">Details</a></li>
+ <li><a href="#">video</a></li>
+ 
+ 
+</ul>
+</header>
+
+</navbar>  
+</div>
+
+
+
+
+
+<!--header-->
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Left Column -->
+            <div class="col-md-6">
+                <div class="container-fluid text-left  shadow" style="height: 500px ;background-image: url('data:image/jpeg;base64,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');"
+ >
+                    
+                    <h2 class="man">weather </h2>
+                    <img src="https://www.worldatlas.com/r/w1200-h630-c1200x630/upload/5f/ca/3d/shutterstock-570757069.jpg" 
+                    style="height: 250px; width:450px" alt="">
+                    
+                    <div class="">
+                        <div id="kalvin" class="text-left text-black  "style="font-size: 24px; font-weight: bold;"></div>
+                        <div id="cityname" class="text-left text-black" style="font-size: 15px; font-weight: bold;" > </div>
+                        <div id="time" class="text-left text-black" style="font-size: 15px; font-weight: bold;"   ></div>
+                        <div id="sunrise" class="text-left text-black" style="font-size: 15px; font-weight: bold;"   ></div>
+                        
+                        <div id="sunset" class="text-left text-black"style="font-size: 15px; font-weight: bold;"   ></div>
+                    </div>
+<!--icon-->
+    <div class="d-flex jusify-content-center">              
+<img src="https://cdn-icons-png.freepik.com/512/10961/10961115.png?fd=1&filename=winter_10961115.png" alt="hhjsd" class="icon-small">
+<div>
+    <img src="https://cdn4.iconfinder.com/data/icons/the-weather-is-nice-today/64/weather_15-128.png"      alt=""class="icon-small2">                
+                   </div> </div></div>
+                   
+
+
+
+                        
+
+                           </div>
+            
+            <!-- Right Column -->
+            <div class="col-md-6">
+                <div class="container-fluid justify-content-between text-left  shadow p-4" style="height: 500px; margin-left: -30px; background-image: url('https://th.bing.com/th/id/OIP.CRr7tAQFz1maqJyi32OHzgHaEK?rs=1&pid=ImgDetMain');  ">
+                    <input id="hello" class="text-align-left justify-content-left mt-3" style="height:30px; width:200px; border-radius: 8px;" placeholder="Enter city">
+                    <button id="place" class="text-align-left justify-content-left mt-3 bg-warning"  style="border-radius: 8px; height:30px; width:100px;"   
+                    onclick="search()">  
+                        Search <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <button class="justify-content-between bg-primary" onclick="resetFunction()" style="border-radius: 8px;">
+                        <i class="fas fa-redo fw-3"></i> Reset 
+                    </button>
+                    <hr class="popy">
+                    <h1 class="hello" style="font-size:x-large;color:black; font-weight:bold;">Weather Details:</h1><br>
+                    <h2 class="hello2" style="color:white; font-weight:small; font-size:20px;" id="country">Country</h2><br><br>
+                    <h2 class="hello2" style="color:white; font-weight:small; font-size:20px;" id="humidity">Humidity</h2><br><br>         
+                    <h2 class="hello2" style="color:white; font-weight:small; font-size:20px;" id="wind">Wind</h2><br><br>
+                    <h2 class="hello2" style="color:white; font-weight:small; font-size:20px;" id="pressure">Pressure</h2><hr class="popy">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---footer-->
+    <div class="">
+        <footer>
+            <hr class="popy">
+            
+            <p class="text-content-center justify-content-center"  style="margin-left: 350px;">Copyright © 1998-2024 Nielsen Norman Group, All Rights Reserved.</p>
+            <i class="fa-brands fa-twitter fa-bounce fa-2xl" style="color: #63E6BE; margin-left: 500px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <i class="fa-brands fa-instagram fa-beat fa-2xl" style="color: #0000f4;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;
+            <i class="fa-brands fa-linkedin fa-bounce fa-2xl" style="color: hsl(0, 87%, 50%);"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <i class="fa-solid fa-envelope fa-beat-fade fa-2xl" style="color: hwb(110 0% 0%);"></i>
+        </footer>&nbsp;
+
+    </div>
+
+
+    <script>
+        const apiKey = "10ac9cb2a90365ad7136a505b1dd4fb1";
+
+        function search() {
+            const city = document.getElementById("hello").value;
+            fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`)
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById("country").innerHTML = `Country:<span style="color:black;font-size:20px;font-weight: bold;"  "> ${data.sys.country}</span>`;
+                    document.getElementById("humidity").innerHTML = `Humidity:<span style="color:black;font-size:20px;font-weight: bold;"   ">  ${data.main.humidity}%</span>`;
+                    document.getElementById("wind").innerHTML = `Wind:<span style="color:black; font-size:20px; font-weight: bold;"  "> ${data.wind.speed} m/s </span>`;
+                    document.getElementById("pressure").innerHTML = `Pressure: <span style="color:black; font-size:20px; font-weight: bold;"  ">${data.main.pressure} hPa <span>`;
+
+                    // Display the city name
+                    document.getElementById("cityname").innerHTML = data.name;
+                    
+                    // Convert and display the local time based on timezone
+                    const timezoneOffset = data.timezone;
+                    const localTime = new Date(Date.now() + timezoneOffset * 1000);
+                    document.getElementById("time").innerText = `Local Time: ${localTime.toLocaleTimeString()}`;
+                    
+                    // Display sunrise and sunset times
+                    const sunriseTime = new Date(data.sys.sunrise * 1000).toLocaleTimeString();
+                    const sunsetTime = new Date(data.sys.sunset * 1000).toLocaleTimeString();
+                    document.getElementById("sunrise").innerText = `Sunrise: ${sunriseTime}`;
+                    document.getElementById("sunset").innerText = `Sunset: ${sunsetTime}`;
+
+                    // Convert temperature to Kelvin and display it
+                    const tempCelsius = data.main.temp;
+                    const tempKelvin = celsiusToKelvin(tempCelsius);
+                    document.getElementById("kalvin").innerText = ` ${tempCelsius}°C `;
+                })
+                .catch(error => console.error("Error fetching weather data:", error));
+        }
+
+        // Celsius to Kelvin conversion function
+        function celsiusToKelvin(celsius) {
+            return (celsius + 273.15).toFixed(2); // keeping 2 decimal places for better readability
+        }
+
+        function resetFunction() {
+            document.getElementById("country").innerText = "Country";
+            document.getElementById("humidity").innerText = "Humidity";
+            document.getElementById("wind").innerText = "Wind";
+            document.getElementById("pressure").innerText = "Pressure";
+            document.getElementById("hello").value = "";
+            document.getElementById("cityname").innerText = "";
+            document.getElementById("time").innerText = "";
+            document.getElementById("sunrise").innerText = "";
+            document.getElementById("sunset").innerText = "";
+            document.getElementById("kalvin").innerText = "";
+        }
+    </script>
+</body>
+</html>

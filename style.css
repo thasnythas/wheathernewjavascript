@@ -1,0 +1,102 @@
+body{
+    background-image: url('https://th.bing.com/th/id/OIP.zGgPtZQ_eDw21In7UCX7JAAAAA?w=266&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7');
+    background-position: fixed;
+    background-attachment: fixed;
+    
+    font-family: Georgia, 'Times New Roman', Times, serif;
+   }
+   .icon-small {
+       width: 50px;
+       height: 50px;
+       margin-top: 20px;
+       margin-left: 300px;
+       justify-content: center;
+       animation-name: example;
+       animation-duration: 2s; /* Adjust the duration as needed */
+       animation-iteration-count: infinite; /* For continuous animation */
+   }
+   
+   @keyframes example {
+       0% { margin-left: 0; color: blue; }
+       25% { margin-left: 50px; background-color: brown; }
+       50% { margin-left: 100px; background-color: violet; }
+       100% { margin-left: 0; background-color: green; }
+       70% {margin-right: 50px;}
+       30%{margin-right: 40%;}
+   }
+   .icon-small2 {
+       width: 70px;
+       height: 80px;
+       margin-left: 200px;
+       animation-name: example2;
+       animation-duration: 3s; /* Added duration */
+       animation-iteration-count: infinite;
+   }
+   
+   @keyframes example2 {
+       0% { margin-right: 70px; ; }
+       30% { margin-right: 40px;  }
+       70% { margin-right: 50px; }
+       100% { margin-right: 0; background-color: transparent; }
+   }
+   .menubar{
+       display: inline-flex;
+       justify-content: space-between;
+       text-align: center;
+      
+       
+       padding:5px 20px;
+   }
+   
+   header{
+       background-color: yellow;
+   }
+   
+   
+     ul{
+       list-style: none;
+       margin-left: 200px;
+       padding:10px;
+       
+     
+       
+   }
+     li{
+       display: inline-block;
+       padding-left: 60px;
+       font-size: x-large;
+   }
+   li a {
+       text-decoration: none;
+       color: red;
+       padding: 10px 20px;
+       background-color: black;
+       transition: background-color 0.3s;
+       
+       
+   }
+   li a:hover {
+       background-color: lime;
+       cursor: pointer;}
+       .simple{
+           height:100px;
+           weight:100px;
+           animation-name: lila;
+           animation-duration: 2s;
+         animation-iteration-count: infinite;
+       }
+       @keyframes lila{
+           0%{margin-left: 10% ;}
+          
+       }footer{
+           background-color: gold;
+           width:100%;
+           height:150px;
+       }
+      .man{
+       -webkit-text-fill-color: blue;
+       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds a shadow with offset and color */
+       -webkit-text-stroke: 3px black; /* Adds a 2px black outline around the text */
+       color: rgb(14, 216, 88);
+   stroke-width: 4px;
+      }
